@@ -7,6 +7,9 @@ public class Circulo_ZAM extends FiguraGeometrica_ZAM {
 	public Circulo_ZAM(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if(radio<0){
+		radio=radio*-1; 
+		}  
 	}
 
 	@Override
